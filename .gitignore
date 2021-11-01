@@ -1,0 +1,10 @@
+DATA/
+Graphs/
+Old_stuff/
+Others/
+Papers/
+
+__pycache__/
+.git/
+.pylint.d/
+.spyproject/
