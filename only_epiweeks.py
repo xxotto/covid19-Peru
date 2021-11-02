@@ -111,4 +111,4 @@ if __name__ == '__main__':
     
 del vac_url, fal_url
 
-epiweeks.to_csv('semanas_epi.csv')
+epiweeks.to_csv('epi_weeks.csv')
