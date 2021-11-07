@@ -18,7 +18,8 @@ def read_largeCSV_file(url, separator, cols):
                           dtype={'UBIGEO': 'object',
                                  'id_persona': 'float64',
                                  'FECHA_FALLECIMIENTO': 'int64',
-                                 'DEPARTAMENTO': 'category'},
+                                 'DEPARTAMENTO': 'category',
+                                 'dosis': 'int8'},
                           usecols = cols)
     pd_df = dask_df.compute()
     end = time.time()
@@ -156,3 +157,11 @@ def missing_values(df):
     missing_value_df = pd.DataFrame({'percent_missing': percent_missing}).reset_index()
 
     return missing_value_df
+
+
+
+def dose(df, var_name):
+                                           
+    df = df.drop(df[df[var_name] == 1].index)
+    
+    return df
