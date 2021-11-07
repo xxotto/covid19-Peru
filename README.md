@@ -25,4 +25,3 @@ y transforma las variables a un formato más manejable:
 - Datos actualizados de fallecidos: https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa
 - Datos actualizados de vacunados: https://www.datosabiertos.gob.pe/dataset/vacunacion
 - Datos actualizados de UBIGEOS: https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru
->>>>>>> 910edff98fa5648bd253ae55ef662a3ed648ae2a

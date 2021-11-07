@@ -1,8 +1,3 @@
-'''
-Author:         Otto F. Proaño
-Created:        15/09/2021
-'''
-
 import pandas as pd
 import numpy as np
 import time
@@ -36,7 +31,7 @@ def read_largeCSV_file(url, separator, cols):
 
 def df_into_chunks(df):
     
-    n = 500000  #chunk row size
+    n = 500000  #size of chunks
     list_df = [df[i:i+n] for i in range(0,df.shape[0],n)]
     
     return list_df
