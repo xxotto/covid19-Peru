@@ -157,11 +157,3 @@ def missing_values(df):
     missing_value_df = pd.DataFrame({'percent_missing': percent_missing}).reset_index()
 
     return missing_value_df
-
-
-
-def dose(df, var_name):
-                                           
-    df = df.drop(df[df[var_name] == 1].index)
-    
-    return df
