@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import time
+# import time
 
 from epiweeks import Week
 from dask import dataframe as dd
@@ -13,7 +13,7 @@ from dask import dataframe as dd
 def read_largeCSV_file(url, separator, cols):
 
     # Read large CSV files using dask
-    start = time.time()
+    #start = time.time()
     dask_df = dd.read_csv(url, sep = separator, 
                           dtype={'UBIGEO': 'object',
                                  'id_persona': 'float64',
@@ -21,10 +21,10 @@ def read_largeCSV_file(url, separator, cols):
                                  'DEPARTAMENTO': 'category',
                                  'dosis': 'int8'},
                           usecols = cols)
-    pd_df = dask_df.compute()
-    end = time.time()
-    print("Read csv with dask: ",(end-start),"sec")
-    pd_df.info(verbose=False, memory_usage="deep")
+    pd_df = dask_df.compute()   # conver to df format
+    #end = time.time()
+    #print("Read csv with dask: ",(end-start),"sec")
+    #pd_df.info(verbose=False, memory_usage="deep")
     
     return pd_df
 
@@ -127,14 +127,6 @@ def añadir_UBIGEO(df):
 
 
 def date_to_epiweek(df, date_name):
-    
-    df[['epi_year','epi_week']] = df[date_name].apply(lambda date_name : Week.fromdate(date_name).weektuple()).tolist()
-
-    df['epi_year'] = df['epi_year'].apply(np.int16)
-    df['epi_week'] = df['epi_week'].apply(np.int8)
-    
-    del df[date_name]
-    df.info()
     '''
     Transformamos nuestra fecha dd/mm/yyyy objeto a formato fecha 
     por defeto en un Dtype datetime64[ns]
@@ -148,6 +140,13 @@ def date_to_epiweek(df, date_name):
     Separamos la tupla en 2 variables, una con el año y otra con la semana epi
     Y guardamos en un nuevo csv
     '''
+    df[['epi_year','epi_week']] = df[date_name].apply(lambda date_name : Week.fromdate(date_name).weektuple()).tolist()
+
+    df['epi_year'] = df['epi_year'].apply(np.int16)
+    df['epi_week'] = df['epi_week'].apply(np.int8)
+    
+    del df[date_name]
+
     
     
 def missing_values(df):
