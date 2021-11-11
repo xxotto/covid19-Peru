@@ -4,3 +4,5 @@ __pycache__/
 .spyproject/
 .idea/
 .ipynb_checkpoints/
+.Rproj.user
+.covid19-peru.Rproj
