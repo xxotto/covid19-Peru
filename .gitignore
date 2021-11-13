@@ -6,3 +6,8 @@ __pycache__/
 .ipynb_checkpoints/
 .Rproj.user
 .covid19-peru.Rproj
+.RData
+.Rhistory
+*.pdf
+Data/.ipynb_checkpoints/
+covid19-peru.Rproj
