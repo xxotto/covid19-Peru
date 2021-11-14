@@ -16,9 +16,7 @@ Data products, datos finales o tablas resumen obtenidos se encuentran en el dire
 
 Imágenes de resultados se encuentran en el directorio [Images](). (**Resultados aún no disponibles**)
 
-# ¿Cómo funciona?
-
-## Fuentes de datos (RawData)
+# Fuentes de datos (RawData)
 
 En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData) podemos encontrar todas las bases de datos que fueron usadas para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron de las siguientes direcciones:
 
@@ -36,11 +34,11 @@ En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/R
 
 Todos datos usados en este repositorio fueron obtenidos mediante fuentes oficiales como lo es el Ministerio de Salud del Perú (MINSA) a través de la de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú.
 
-## Funcionamiento
+# ¿Cómo funciona?
 
 Proximamente...
 
-## Fuentes de información usadas
+# Fuentes de información usadas
 
 Proximamente...
 
