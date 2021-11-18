@@ -40,10 +40,14 @@ Proximamente...
 
 # Fuentes de información usadas
 
-Proximamente...
+- [Documento Técnico: Plan Nacional Actualizado de Vacunación contra la COVID-19](https://cdn.www.gob.pe/uploads/document/file/1805113/Plan%20Nacional%20Actualizado%20contra%20la%20COVID-19.pdf)
 
 # Contacto
    
 Todos los scripts, gráficos, procesos de limpieza y manejo de bases de datos epidemiológicos fueron realizados por Otto Proaño ([@xxotto](https://github.com/xxotto)) durante el transcurso de pasantías de investigación dentro del [Laboratorio de Investigación en Enfermedades Emergentes - EmergeLab](https://investigacion.cayetano.edu.pe/catalogo/saludintegral/emerge), de la Universidad Peruana Cayetano Heredia (UPCH) bajo la supervisión de David W. Chaupis-Meza. Cualquier duda, comentario o sugerencia será bienvenida. 
 
 Correo de contacto: otto.proano@hotmail.com
+
+# Agradecimientos
+
+Proyecto inspirado en el repositorio [Datos-COVID19](https://github.com/MinCiencia/Datos-COVID19) de MinCiencia.

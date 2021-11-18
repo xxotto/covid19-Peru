@@ -38,7 +38,7 @@ vnd_xdep = read.csv('Data/vac_fal_x_departamento.csv')
 ## 3. Linear model
 ```{r}
 lm <- lm(tasa_mortalidad ~ vac_porcentaje, data = vnd_xdep)
-summary(lm)
+
 ```
 
 ## 4. Linear model
