@@ -16,7 +16,7 @@ Data products, datos finales o tablas resumen obtenidos se encuentran en el dire
 
    - [Data Product 4](Data/vacunados_x_departamentos_x_semanaEpi.csv): Número de vacunados contra COVID-19 por semana epidemiológica de cada departamento.
 
-Imágenes de resultados se encuentran en el directorio [Images](). (**Resultados aún no disponibles**)
+Imágenes de resultados se encuentran en el directorio [Images](Images/).
 
 # Fuentes de datos (RawData)
 

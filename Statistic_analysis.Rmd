@@ -32,7 +32,7 @@ library(ggpubr)
 Read the file of "TOTAL number of people fully vaccinated (2 doses) and the TOTAL confirmed DEATHS from COVID-19 by each of the 24 departments of Peru":
 
 ```{r}
-vnd_xdep = read.csv('Data/vac_fal_x_departamento.csv')
+vnd_xdep = read.csv('Data/TOTAL_vacunados_y_fallecidos_x_departamento.csv')
 ```
 
 ## 3. Linear model
