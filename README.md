@@ -20,7 +20,7 @@ Imágenes de resultados se encuentran en el directorio [Images](Images/).
 
 # Fuentes de datos (RawData)
 
-En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData) podemos encontrar todas las bases de datos que fueron usadas para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron de las siguientes direcciones:
+En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData) se encuentran todas las bases de datos que fueron usadas para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron de [Datos Abiertos de COVID-19](https://www.datosabiertos.gob.pe/group/datos-abiertos-de-covid-19):
 
 1. Fallecidos por COVID-19: 
    https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa
@@ -34,7 +34,7 @@ En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/R
 4. Códigos equivalentes de UBIGEO del Perú:
    https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru
 
-Todos datos usados en este repositorio fueron obtenidos mediante fuentes oficiales como lo es el Ministerio de Salud del Perú (MINSA) a través de la de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú.
+Todos datos usados en este repositorio fueron obtenidos mediante fuentes oficiales como lo es el [Instituto Nacional de Estadística e Informática (INEI)](https://www.inei.gob.pe/) o el [Ministerio de Salud del Perú (MINSA)](https://www.gob.pe/minsa) a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
 
 # ¿Cómo funciona?
 
@@ -42,9 +42,9 @@ Proximamente...
 
 # Fuentes de información usadas
 
-Documentos Técnicos:
+- [«Documento Técnico: Plan Nacional Actualizado de Vacunación contra la COVID-19»](https://cdn.www.gob.pe/uploads/document/file/1805113/Plan%20Nacional%20Actualizado%20contra%20la%20COVID-19.pdf). Fuente: MINSA.
 
-- [Documento Técnico: Plan Nacional Actualizado de Vacunación contra la COVID-19](https://cdn.www.gob.pe/uploads/document/file/1805113/Plan%20Nacional%20Actualizado%20contra%20la%20COVID-19.pdf)
+- [«PERÚ: Estimaciones y Proyecciones de Población por Departamento, Provincia y Distrito, 2018 - 2020»](https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1715/Libro.pdf). Página 39 estimaciones de población total proyectada para 2020 por departamento. Fuente: INEI.
 
 # Contacto
    
