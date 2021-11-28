@@ -6,7 +6,9 @@ from epiweeks import Week
 from dask import dataframe as dd
 
 
+#######################################################
 # Funciones para transformar variables
+#######################################################
 
 
 
@@ -46,15 +48,14 @@ def variable_fecha(df, date_name):
                                    format = '%Y%m%d')
     
 
-
+ 
 def variable_fecha_ymd(df, date_name):
     
     # Toma una fecha en dd/mm/yyyy y la transforma a yyyy-mm-dd
-    df[date_name] = pd.to_datetime(df[date_name], 
-                                   format = '%d/%m/%Y')
+    df.loc[:,date_name] = pd.to_datetime(df.loc[:,date_name], format = '%d/%m/%Y')
+
     
-    
-    
+
 def variable_edad(df, name_age_variable):
 
     # Función que crea 2 variables categorizadas de la variable EDAD
@@ -96,35 +97,6 @@ def variable_sexo(df):
 
 
 
-def añadir_UBIGEO(df):
-    
-    # Función para añadir latitudes (LAT) y Longuitudes(LNG) según UBIGEO
-    
-    ''' Cambiamos los valores no validos de UBIGEO con 'nan' values
-        Recordar que UBIGEO es un número o ID para identificar ciudades, 
-        en este caso existen inconsistencias por eso se decide 
-        eliminar filas si no tienen un ID'''
-        
-    df['UBIGEO'] = pd.to_numeric(df['UBIGEO'], errors='coerce')
-
-    ''' Ahora agregamos las latitudes (LAT) y Longuitudes(LNG) de los ubigeos
-        IMPORTANTE: en la página de datos abiertos el diccionario dice que 
-        UBIGEO es el código de ubigeo_inei'''
-    
-    # Leemos el csv de UBIGEOS con sus códigos
-    url_ubigeo = 'https://raw.githubusercontent.com/xxotto/covid19-Peru/main/Data/TB_UBIGEOS.csv' 
-    cols = ['ubigeo_inei', 'departamento_inei', 'latitud', 'longitud']
-    df_ubigeos = pd.read_csv(url_ubigeo, usecols=cols, encoding='utf8')
-
-    # Renombramos nuestros ubigeos del df de fallecidos de UBIGEO a ubigeo_inei
-    df.rename(columns = {'UBIGEO':'ubigeo_inei'}, inplace = True)
-
-    # Mezclamos los df de acuerdo a su UBIGEO de izquierda a derecha df to df_ubigeos
-    df = df.merge(df_ubigeos, on = 'ubigeo_inei', how = 'left')
-    
-    return df
-
-
 
 def date_to_epiweek(df, date_name):
     '''
@@ -156,3 +128,6 @@ def missing_values(df):
     missing_value_df = pd.DataFrame({'percent_missing': percent_missing}).reset_index()
 
     return missing_value_df
+
+
+
