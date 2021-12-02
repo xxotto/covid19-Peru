@@ -131,3 +131,18 @@ def missing_values(df):
 
 
 
+    """
+    Función para filtrar a cada vacunado y fallecido reportado en su año
+    y semana epidemiológica (Fallecidos = fal, Vacunados = vac)
+
+    Parameters
+    ----------
+    vac_url: Directorio o url del dataset de VACUNADOS contra COVID-19
+    fal_url: Directorio o url del dataset de FALLECIDOS por COVID-19
+
+    Returns
+    -------
+    lst_vac: Lista de 'chunks' o dataframes de tamaño n de VACUNADOS
+    df_fal: Dataframe de FALLECIDOS
+
+    """
