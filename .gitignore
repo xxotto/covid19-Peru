@@ -11,3 +11,4 @@ __pycache__/
 *.pdf
 Data/.ipynb_checkpoints/
 covid19-peru.Rproj
+RawData/TB_VACUNACION_COVID19.csv
