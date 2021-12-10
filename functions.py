@@ -13,8 +13,8 @@ from dask import dataframe as dd
 
 
 def read_largeCSV_file(url, separator, cols):
-
     # Read large CSV files using dask
+    
     #start = time.time()
     dask_df = dd.read_csv(url, sep = separator, 
                           dtype={'UBIGEO': 'object',
@@ -33,6 +33,7 @@ def read_largeCSV_file(url, separator, cols):
 
 
 def df_into_chunks(df):
+    # Separar df en una lista de dfs de tamaño n
     
     n = 500000  #size of chunks
     list_df = [df[i:i+n] for i in range(0,df.shape[0],n)]
@@ -42,22 +43,20 @@ def df_into_chunks(df):
 
 
 def variable_fecha(df, date_name):
-    
     # Función que cambia el formato de fechas de YYYYMMDD a yyyy/mm/dd
-    df[date_name] = pd.to_datetime(df[date_name], 
-                                   format = '%Y%m%d')
+    
+    df[date_name] = pd.to_datetime(df[date_name], format = '%Y%m%d')
     
 
  
 def variable_fecha_ymd(df, date_name):
+    # Toma una fecha de dd/mm/yyyy y la transforma a yyyy-mm-dd
     
-    # Toma una fecha en dd/mm/yyyy y la transforma a yyyy-mm-dd
     df.loc[:,date_name] = pd.to_datetime(df.loc[:,date_name], format = '%d/%m/%Y')
 
     
 
 def variable_edad(df, name_age_variable):
-
     # Función que crea 2 variables categorizadas de la variable EDAD
     
     # Categorizamos la variable EDAD en 8 categorías de acuerdo a grupos etáreos
@@ -81,7 +80,6 @@ def variable_edad(df, name_age_variable):
     
     
 def variable_sexo(df):
-        
     # Función para codificar la variable SEXO
     
     # Verificamos el % de 'MASCULINO' Y 'FEMENINO' para ver si no existe otro 
@@ -122,27 +120,9 @@ def date_to_epiweek(df, date_name):
     
     
 def missing_values(df):
-    
     # Función que devuelve un df con los % de datos faltantes
+    
     percent_missing = df.isnull().sum() * 100 / len(df)
     missing_value_df = pd.DataFrame({'percent_missing': percent_missing}).reset_index()
 
     return missing_value_df
-
-
-
-    """
-    Función para filtrar a cada vacunado y fallecido reportado en su año
-    y semana epidemiológica (Fallecidos = fal, Vacunados = vac)
-
-    Parameters
-    ----------
-    vac_url: Directorio o url del dataset de VACUNADOS contra COVID-19
-    fal_url: Directorio o url del dataset de FALLECIDOS por COVID-19
-
-    Returns
-    -------
-    lst_vac: Lista de 'chunks' o dataframes de tamaño n de VACUNADOS
-    df_fal: Dataframe de FALLECIDOS
-
-    """
