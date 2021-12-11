@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-# import time
+import time
 
 from epiweeks import Week
 from dask import dataframe as dd
@@ -9,6 +9,33 @@ from dask import dataframe as dd
 #######################################################
 # Funciones para transformar variables
 #######################################################
+
+
+
+def complete_largeCSV_file(url, separator):
+    # Read a complete large CSV files using dask
+    
+    start = time.time()
+    dask_df = dd.read_csv(url, sep = separator, 
+                          dtype={'FECHA_CORTE' : 'category',
+                                 'FECHA_FALLECIMIENTO' : 'category',
+                                 'EDAD_DECLARADA' : 'category',
+                                 'SEXO' : 'category',
+                                 'CLASIFICACION_DEF' : 'category',
+                                 'DEPARTAMENTO' : 'category',
+                                 'PROVINCIA' : 'category',
+                                 'DISTRITO' : 'category',
+                                 'UBIGEO': 'category',
+                                 'id_persona': 'float64',
+                                 'FECHA_FALLECIMIENTO': 'int64',
+                                 'DEPARTAMENTO': 'category',
+                                 'dosis': 'int8'})
+    pd_df = dask_df.compute()   # conver to df format
+    end = time.time()
+    print("Read csv with dask: ",(end-start),"sec")
+    pd_df.info(verbose=False, memory_usage="deep")
+    
+    return pd_df
 
 
 
