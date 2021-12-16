@@ -19,7 +19,7 @@ def complete_largeCSV_file(url, separator):
     dask_df = dd.read_csv(url, sep = separator, 
                           dtype={'FECHA_CORTE' : 'category',
                                  'FECHA_FALLECIMIENTO' : 'category',
-                                 'EDAD_DECLARADA' : 'category',
+                                 'EDAD_DECLARADA' : 'int64',
                                  'SEXO' : 'category',
                                  'CLASIFICACION_DEF' : 'category',
                                  'DEPARTAMENTO' : 'category',
@@ -27,9 +27,14 @@ def complete_largeCSV_file(url, separator):
                                  'DISTRITO' : 'category',
                                  'UBIGEO': 'category',
                                  'id_persona': 'float64',
-                                 'FECHA_FALLECIMIENTO': 'int64',
-                                 'DEPARTAMENTO': 'category',
-                                 'dosis': 'int8'})
+                                 'id_vacunados_covid19': 'float64',
+                                 'fecha_vacunacion' : 'category',
+                                 'id_eess' : 'category',
+                                 'id_centro_vacunacion' : 'category',
+                                 'id_vacuna' : 'category',
+                                 'id_grupo_riesgo' : 'category',
+                                 'dosis': 'int8',
+                                 'edad' : 'in64'})
     pd_df = dask_df.compute()   # conver to df format
     end = time.time()
     print("Read csv with dask: ",(end-start),"sec")
@@ -42,18 +47,27 @@ def complete_largeCSV_file(url, separator):
 def read_largeCSV_file(url, separator, cols):
     # Read large CSV files using dask
     
-    #start = time.time()
     dask_df = dd.read_csv(url, sep = separator, 
-                          dtype={'UBIGEO': 'object',
+                          dtype={'FECHA_CORTE' : 'category',
+                                 'FECHA_FALLECIMIENTO' : 'int64',
+                                 'EDAD_DECLARADA' : 'int64',
+                                 'SEXO' : 'category',
+                                 'CLASIFICACION_DEF' : 'category',
+                                 'DEPARTAMENTO' : 'category',
+                                 'PROVINCIA' : 'category',
+                                 'DISTRITO' : 'category',
+                                 'UBIGEO': 'category',
                                  'id_persona': 'float64',
-                                 'FECHA_FALLECIMIENTO': 'int64',
-                                 'DEPARTAMENTO': 'category',
-                                 'dosis': 'int8'},
+                                 'id_vacunados_covid19': 'float64',
+                                 'fecha_vacunacion' : 'int64',
+                                 'id_eess' : 'category',
+                                 'id_centro_vacunacion' : 'category',
+                                 'id_vacuna' : 'category',
+                                 'id_grupo_riesgo' : 'category',
+                                 'dosis': 'category',
+                                 'edad' : 'int64'},
                           usecols = cols)
     pd_df = dask_df.compute()   # conver to df format
-    #end = time.time()
-    #print("Read csv with dask: ",(end-start),"sec")
-    #pd_df.info(verbose=False, memory_usage="deep")
     
     return pd_df
 
@@ -124,25 +138,10 @@ def variable_sexo(df):
 
 
 def date_to_epiweek(df, date_name):
-    '''
-    Transformamos nuestra fecha dd/mm/yyyy objeto a formato fecha 
-    por defeto en un Dtype datetime64[ns]
-    Transformamos nuevamente dicha fecha a un Dtype objeto pero en un formato 
-    de fecha adecuado para el paquete epiweeks
-
-    Transformamos de formato fecha (yyyy-mm-dd) a objeto en formato 'Week'
-    Usando .weektuple() se obtiene una tupla con su año y semana epidemiológica
-    Es decir vamos de 07/05/2021 [date type] a una tupla (2021,18) [tuple type]
+    '''Recibe un dataframe y el nombre (en str) de la columna fecha, a convertir 
+    en semana epidemiológica'''
     
-    Separamos la tupla en 2 variables, una con el año y otra con la semana epi
-    Y guardamos en un nuevo csv
-    '''
-    df[['epi_year','epi_week']] = df[date_name].apply(lambda date_name : Week.fromdate(date_name).weektuple()).tolist()
-
-    df['epi_year'] = df['epi_year'].apply(np.int16)
-    df['epi_week'] = df['epi_week'].apply(np.int8)
-    
-    del df[date_name]
+    df[['year','epi_week']] = df[date_name].apply(lambda date_name : Week.fromdate(date_name).weektuple()).tolist()
 
     
     
