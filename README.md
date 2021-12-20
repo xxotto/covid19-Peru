@@ -7,18 +7,12 @@ El objetivo del repositorio es integrar información, generar tablas resumen y v
 # Data Products (Data)
 
 Data products, datos finales o tablas resumen obtenidos se encuentran en el directorio [Data](https://github.com/xxotto/covid19-peru/tree/main/Data). Todos los archivos se encuentran en formato de valores separados por comas (CSV).
-
-   - [Data Product 1](Data/TOTAL_vacunados_y_fallecidos_x_semanaEpi.csv): Total de vacunados y fallecidos por COVID-19 por cada semana epidemiológica a nivel nacional.
    
-   - [Data Product 2](Data/fallecidos_x_departamentos_x_semanasEpi.csv): Número de fallecidos por COVID-19 por semana epidemiológica de cada departamento.
+   - [Data Product 1](): Número de vacunados (dosis aplicadas) y fallecidos por COVID-19 por semana epidemiológica. 
 
-   - [Data Product 3](Data/TOTAL_vacunados_y_fallecidos_x_semanaEpi.csv): Total de fallecidos, vacunados, tasa de mortalidad por 100.000 habitantes y porcentaje de vacunación contra COVID-19 de cada departamento.
+   - [Data Product 2](): TOTAL de vacunados y fallecidos por COVID-19 por cada semana epidemiológica a nivel nacional.
 
-   - [Data Product 4](Data/vacunados_x_departamentos_x_semanaEpi.csv): Número de vacunados contra COVID-19 por semana epidemiológica de cada departamento.
-
-   - [Data Product 5](Data/dosis_vacuna_x_semanaEpi.csv): Número de dosis por semana epidemiológica.
- - 
-Imágenes de resultados se encuentran en el directorio [Images](Images/).
+Imágenes de resultados se encuentran en el directorio [Images]().
 
 # Fuentes de datos (RawData)
 

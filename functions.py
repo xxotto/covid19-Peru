@@ -101,6 +101,7 @@ def variable_edad(df, name_age_variable):
     # Función que crea 2 variables categorizadas de la variable EDAD
     
     # Categorizamos la variable EDAD en 8 categorías de acuerdo a grupos etáreos
+
     c = name_age_variable
     conditions = [(df[c]< 18),
                   (df[c]>=18) & (df[c]<30),
@@ -111,13 +112,15 @@ def variable_edad(df, name_age_variable):
                   (df[c]>=70) & (df[c]<80),
                   (df[c]>=80)]
     choices = [0,1,2,3,4,5,6,7]
-    
+
     # La 1era en grupos etáreos (EDAD_CAT)
     df['edad_cat'] = np.select(conditions, choices, default=np.nan) 
-
+    df['edad_cat'] = df['edad_cat'].apply(np.int8)
+    del df[name_age_variable]
+    
     # y la 2nda en mayores de edad (EDAD_CAT_18)
     #df['edad_cat_18'] = np.where(df[name_age_variable]<18,0,1)
-    
+
     
     
 def variable_sexo(df):
