@@ -29,5 +29,5 @@
 | 3   | dosis_2         | Total de 2da dosis aplicadas               |
 | 4   | dosis_3         | Total de 3ra dosis aplicadas               |
 | 5   | no_habitantes   | Número de habitantes por departamento 2020 |
-| 6   | tasa_mortalidad | Tasa de mortaludad por 100 000 habitantes  |
+| 6   | tasa_mortalidad | Tasa de mortalidad por 100 000 habitantes  |
 | 7   | vac_porcentaje  | Porcentaje de la población vacunada        |
