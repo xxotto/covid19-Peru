@@ -1,6 +1,8 @@
 # Data results
 
-### [Data Product 1](https://github.com/xxotto/covid19-peru/blob/main/Data/vacunados_y_fallecidos_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
+**IMPORTANTE: Fecha de última actualización 20 de diciembre del 2021**
+
+### [Data Product 1](https://github.com/xxotto/covid19-peru/blob/main/Data/DP1_vacunados_y_fallecidos_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
 
 
 | No. | Variable      | Descripción                  | No. | Variable     | Descripción                       |
@@ -17,9 +19,7 @@
 |  9  | 50_59_fal     | Fallecidos de 50 a 59 años   | ... |      ...     |                ...                |
 |  10 | 60_69_fal     | Fallecidos de 60 a 69 años   |  46 | UCAYALI_fal  | Número de vacunados en Ucayali    |
 
-### [Data Product 2](https://github.com/xxotto/covid19-peru/blob/main/Data/TOTAL_vacunados_y_fallecidos_x_departamento.csv): TOTAL de personas fallecidas y vacunadas contra COVID-19 por departamento.
-
-semana epidemiológica y departamento.
+### [Data Product 2](https://github.com/xxotto/covid19-peru/blob/main/Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv): TOTAL de personas fallecidas y vacunadas contra COVID-19 por departamento.
 
 | No. | Variable        | Descripción                                |
 |-----|-----------------|--------------------------------------------|
