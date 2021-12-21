@@ -32,29 +32,34 @@ library(ggpubr)
 Read the file of "TOTAL number of people fully vaccinated (2 doses) and the TOTAL confirmed DEATHS from COVID-19 by each of the 24 departments of Peru":
 
 ```{r}
-vnd_xdep = read.csv('Data/TOTAL_vacunados_y_fallecidos_x_departamento.csv')
+df = read.csv('../Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv')
 ```
 
 ## 3. Linear model
 ```{r}
-lm <- lm(tasa_mortalidad ~ vac_porcentaje, data = vnd_xdep)
+lm <- lm(tasa_mortalidad ~ vac_porcentaje, data = df)
 
 ```
 
 ## 4. Linear model
 ```{r}
-lm_graph<-ggplot(vnd_xdep, aes(x=vac_porcentaje, y=tasa_mortalidad)) +
+lm_graph<-ggplot(df, aes(x=vac_porcentaje, y=tasa_mortalidad)) +
                  geom_point(color = "blue", size = 1) + 
                  geom_smooth(method="lm", col="black") +
                  ggtitle("Vaccination Rates Vs Mortality Rate", 
                          subtitle="From all deceased and fully vaccinated people (2 doses)") +
-                 xlab("Percent of Fully Vaccinated") + ylab("Deaths per 100K") + 
-                 geom_text_repel(aes(label = departamento), size = 2.3, 
-                                 hjust = 0.5, vjust = 0.5, 
-                                 min.segment.length = Inf)
-lm_graph
-
+                 xlab("Percent of Fully Vaccinated") + ylab("Deaths per 100K") 
+                 #geom_text_repel(aes(label = departamento), size = 2.3, 
+                  #               hjust = 0.5, vjust = 0.5, 
+                   #              min.segment.length = Inf)
 ```
+
+
+```{r}
+lm_graph
+```
+
+
 
 
 
