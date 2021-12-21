@@ -7,10 +7,6 @@ output:
   html_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Comparing the TOTAL of people FULLY VACCINATED (2 doses) and the TOTAL confirmed DEATHS from COVID-19 by each of the 24 departments of Peru
 
 All data for this project was obtained through the **"Plataforma Nacional de Datos Abiertos"** of Peru <https://www.datosabiertos.gob.pe/>.
@@ -36,30 +32,23 @@ df = read.csv('../Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv')
 ```
 
 ## 3. Linear model
+
 ```{r}
 lm <- lm(tasa_mortalidad ~ vac_porcentaje, data = df)
-
+summary(lm)
 ```
 
 ## 4. Linear model
+
 ```{r}
 lm_graph<-ggplot(df, aes(x=vac_porcentaje, y=tasa_mortalidad)) +
                  geom_point(color = "blue", size = 1) + 
                  geom_smooth(method="lm", col="black") +
                  ggtitle("Vaccination Rates Vs Mortality Rate", 
                          subtitle="From all deceased and fully vaccinated people (2 doses)") +
-                 xlab("Percent of Fully Vaccinated") + ylab("Deaths per 100K") 
-                 #geom_text_repel(aes(label = departamento), size = 2.3, 
-                  #               hjust = 0.5, vjust = 0.5, 
-                   #              min.segment.length = Inf)
-```
-
-
-```{r}
+                 xlab("Porcentaje de población completamente vacunada (2 dosis)") + ylab("Muertes por 100 000 habitantes") +
+                 geom_text_repel(aes(label = departamentos), size = 2.3, 
+                                hjust = 0.5, vjust = 0.5, 
+                               min.segment.length = Inf)
 lm_graph
 ```
-
-
-
-
-
