@@ -12,7 +12,7 @@ Data products, datos finales o tablas resumen obtenidos se encuentran en el dire
 
    - [Data Product 2](https://github.com/xxotto/covid19-peru/blob/main/Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv): TOTAL de personas fallecidas y vacunadas contra COVID-19 por departamento.
 
-Imágenes de resultados se encuentran en el directorio [Images]().
+Imágenes de resultados se encuentran en el directorio [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
 # Fuentes de datos (RawData)
 
@@ -29,6 +29,9 @@ En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/R
    
 4. Códigos equivalentes de UBIGEO del Perú:
    https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru
+
+5. Casos positivos por COVID-19:
+   https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa
 
 Todos datos usados en este repositorio fueron obtenidos mediante fuentes oficiales como lo es el [Instituto Nacional de Estadística e Informática (INEI)](https://www.inei.gob.pe/) o el [Ministerio de Salud del Perú (MINSA)](https://www.gob.pe/minsa) a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
 
