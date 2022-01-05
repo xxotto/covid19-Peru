@@ -1,6 +1,8 @@
 # COVID-19 en Perú
 
-**IMPORTANTE:** Repositorio aún en desarrollo.
+*Fecha de última actualización: 2 de enero del 2022*.
+
+**IMPORTANTE:** Repositorio aún en desarrollo. En caso no se puedan visualziar las libretas de Jupyter Notebook, abrirlas desde [https://nbviewer.org](https://nbviewer.org).
 
 El objetivo del repositorio es integrar información, generar tablas resumen y visualizar datos referentes a COVID-19 de todo el Perú. Así facilitar el uso de los mismos para reportes y boletines de salud, investigaciones epidemiológicas, y apoyar en el proceso de toma de desiciones por parte de instituciones gubernamentales encargadas del área de salud.
 
@@ -23,15 +25,17 @@ En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/R
    
 2. Vacunación contra la COVID-19: 
    https://www.datosabiertos.gob.pe/dataset/vacunacion
+
+3. Casos positivos por COVID-19:
+   https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa
    
-3. Centros de vacunación:
+4. Centros de vacunación:
    https://www.datosabiertos.gob.pe/dataset/centros-de-vacunacion
    
-4. Códigos equivalentes de UBIGEO del Perú:
+5. Códigos equivalentes de UBIGEO del Perú:
    https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru
 
-5. Casos positivos por COVID-19:
-   https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa
+
 
 Todos datos usados en este repositorio fueron obtenidos mediante fuentes oficiales como lo es el [Instituto Nacional de Estadística e Informática (INEI)](https://www.inei.gob.pe/) o el [Ministerio de Salud del Perú (MINSA)](https://www.gob.pe/minsa) a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
 

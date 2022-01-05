@@ -1,7 +1,5 @@
 # Data results
 
-**IMPORTANTE: Fecha de última actualización 20 de diciembre del 2021**
-
 ### [Data Product 1](https://github.com/xxotto/covid19-peru/blob/main/Data/DP1_vacunados_y_fallecidos_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
 
 
