@@ -2,7 +2,7 @@
 
 *Fecha de última actualización: 2 de enero del 2022*.
 
-**IMPORTANTE:** Repositorio aún en desarrollo. En caso no se puedan visualziar las libretas de Jupyter Notebook, abrirlas desde [https://nbviewer.org](https://nbviewer.org).
+**IMPORTANTE:** Repositorio aún en desarrollo. En caso no sea posible visualizar las libretas de Jupyter Notebook, abrirlas desde [https://nbviewer.org](https://nbviewer.org).
 
 El objetivo del repositorio es integrar información, generar tablas resumen y visualizar datos referentes a COVID-19 de todo el Perú. Así facilitar el uso de los mismos para reportes y boletines de salud, investigaciones epidemiológicas, y apoyar en el proceso de toma de desiciones por parte de instituciones gubernamentales encargadas del área de salud.
 
