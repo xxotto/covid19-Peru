@@ -1,21 +1,19 @@
 # COVID-19 en Perú
 El objetivo del repositorio es integrar información, generar tablas resumen y visualizar datos referentes a COVID-19 de todo el Perú. Así facilitar el uso de los mismos para reportes y boletines de salud, investigaciones epidemiológicas, y apoyar en el proceso de toma de desiciones por parte de instituciones gubernamentales encargadas del área de salud.
 
-**Fecha de última actualización: 5 de enero del 2022.**
-
 *Nota: Repositorio aún en desarrollo. En caso no sea posible visualizar las libretas de Jupyter Notebook, utilizar la siguiente dirección [https://nbviewer.org](https://nbviewer.org).*
 
 # Data Products (Data)
 Data products, datos finales o tablas resumen obtenidos se encuentran en el directorio [Data](https://github.com/xxotto/covid19-peru/tree/main/Data). Todos los archivos se encuentran en formato de valores separados por comas (CSV).
    
-   - [Data Product 1](/Data/DP1_vacunados_y_fallecidos_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
+   - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
 
    - [Data Product 2](/Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv): TOTAL de personas fallecidas y vacunadas contra COVID-19 por departamento.
 
 Imágenes de resultados se encuentran en el directorio [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
 # Fuentes de datos (RawData)
-En el directorio de [RawData](/RawData/) se encuentran todas las bases de datos que fueron usados para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
+En el directorio de [RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData) se encuentran todas las bases de datos que fueron usados para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
 
 1. [Fallecidos por COVID-19](https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa)
 2. [Vacunación contra la COVID-19](https://www.datosabiertos.gob.pe/dataset/vacunacion)
