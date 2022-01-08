@@ -18,25 +18,22 @@ Data products, datos finales o tablas resumen obtenidos se encuentran en el dire
    
    - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset de casos positivos, fallecidos y personas completamente vacunadas contra COVID-19 respecto a grupos etáreos y departamentos por año y semana epidemiológica.
 
-   - [Data Product 2](): Proximamente...
+   - [Data Product 2](Data/DP2_covid19-peru_resumen_x_departamentos.csv):  Dataset de casos positivos, fallecidos y totalmente vacunados por cada departamento del Perú. De la misma manera se agrega el número de habitantes de cada departamento, para calcular la tasa de mortalidad por 100 000 habitantes y el porcentaje de vacunación respectivo.
 
 Gráficas de análisis de resultados disponibles en [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
-**Por ejemplo:** Total de muertes por COVID-19 en Perú desde que comenzó la campaña de vacunación (SE6 del 2021) vs porcentaje de la población completamente vacunada.
+**Ejemplo # 1:** Total de muertes por COVID-19 en Perú desde que comenzó la campaña de vacunación (SE6 del 2021) vs porcentaje de la población completamente vacunada.
 
 ![Esta es una imagen de ejemplo](https://raw.githubusercontent.com/xxotto/covid19-peru/main/Images/covid19-peru_fallecidos_vs_vacunados_x_semanaEpi.png)
 
 ## 2. Fuentes de datos ([RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData))
 En el directorio de  se encuentran todas las bases de datos que fueron usados para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
 
-1. #### [Fallecidos por COVID-19](https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa)
-2. ####  [Vacunación contra la COVID-19](https://www.datosabiertos.gob.pe/dataset/vacunacion)
-   
-3. #### [Casos positivos por COVID-19](https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa)
-   
-4. ####  [Centros de vacunación](https://www.datosabiertos.gob.pe/dataset/centros-de-vacunacion)
-   
-5. #### [Códigos equivalentes de UBIGEO del Perú](https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru)
+1. [Fallecidos por COVID-19](https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa)
+2. [Vacunación contra la COVID-19](https://www.datosabiertos.gob.pe/dataset/vacunacion)
+3. [Casos positivos por COVID-19](https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa)
+4. [Centros de vacunación](https://www.datosabiertos.gob.pe/dataset/centros-de-vacunacion)
+5. [Códigos equivalentes de UBIGEO del Perú](https://www.datosabiertos.gob.pe/dataset/codigos-equivalentes-de-ubigeo-del-peru)
 
 Toda la información usada en este repositorio fue obtenida mediante fuentes oficiales como el Instituto Nacional de Estadística e Informática (INEI) o el Ministerio de Salud del Perú (MINSA).
 
