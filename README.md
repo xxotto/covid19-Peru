@@ -5,8 +5,6 @@ El objetivo del repositorio es integrar información, generar tablas resumen y v
 
 ## Tabla de Contenidos
 
-- [COVID-19 en Perú](#covid-19-en-perú)
-  - [Tabla de Contenidos](#tabla-de-contenidos)
   - [1. Data Products (Data)](#1-data-products-data)
   - [2. Fuentes de datos (RawData)](#2-fuentes-de-datos-rawdata)
   - [3. ¿Cómo funciona?](#3-cómo-funciona)
@@ -16,13 +14,13 @@ El objetivo del repositorio es integrar información, generar tablas resumen y v
 
 
 ## 1. Data Products ([Data](https://github.com/xxotto/covid19-peru/tree/main/Data))
-Data products, datos finales o tablas resumen obtenidos se encuentran en el directorio. Todos los archivos se encuentran en formato de valores separados por comas (CSV).
+Data products, datos finales o tablas resumen obtenidos se encuentran en el directorio Data. Todos los archivos se encuentran en formato de valores separados por comas (CSV).
    
    - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset de casos positivos, fallecidos y personas completamente vacunadas contra COVID-19 respecto a grupos etáreos y departamentos por año y semana epidemiológica.
 
    - [Data Product 2](): Proximamente...
 
-Gráficas de análisis de resultados se encuentran en el directorio [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
+Gráficas de análisis de resultados disponibles en [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
 **Por ejemplo:** Total de muertes por COVID-19 en Perú desde que comenzó la campaña de vacunación (SE6 del 2021) vs porcentaje de la población completamente vacunada.
 
