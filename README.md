@@ -1,7 +1,7 @@
 # COVID-19 en Perú
 El objetivo del repositorio es integrar información, generar tablas resumen y visualizar datos referentes a COVID-19 de todo el Perú. Así facilitar el uso de los mismos para reportes y boletines de salud, investigaciones epidemiológicas, y apoyar en el proceso de toma de desiciones por parte de instituciones gubernamentales encargadas del área de salud.
 
-***IMPORTANTE:** Repositorio aún en desarrollo. En caso no sea posible visualizar las libretas de Jupyter Notebook, copiar el link de las mismas y pegarlas en [https://nbviewer.org](https://nbviewer.org).*
+***IMPORTANTE:** Repositorio aún en desarrollo. Datos actualizados cada fin de semana.
 
 ## Tabla de Contenidos
 
