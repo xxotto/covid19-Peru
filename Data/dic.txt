@@ -1,0 +1,53 @@
+DP6
+id_persona              =       idendificador de persona
+fecha_fallecimiento     =       fecha de fallecimiento
+year                    =       año de fallecimiento
+epi_week                =       semana epidemiológica de fallecimiento
+time_days               =       tiempo en días desde el primer fallecido (día 1 primer fallecimiento)
+sexo                    =       1 hombre, 2 mujer
+edad                    =       edad de fallecimiento en años
+edad_cat                =       categoría de edad:
+                                    0       < 18
+                                    1       >=18 & <30
+                                    2       >=30 & <40
+                                    3       >=40 & <50
+                                    4       >=50 & <60
+                                    5       >=60 & <70
+                                    6       >=70 & <80
+                                    7       >=80
+departamento            =       departamentos en orden alfabético:
+                                    AMAZONAS    	1
+                                    ANCASH	        2
+                                    APURIMAC	    3
+                                    AREQUIPA	    4
+                                    AYACUCHO	    5
+                                    CAJAMARCA	    6
+                                    CALLAO  	    7
+                                    CUSCO	        8
+                                    HUANCAVELICA    9
+                                    HUANUCO 	    10
+                                    ICA	            11
+                                    JUNIN	        12
+                                    LA LIBERTAD     13
+                                    LAMBAYEQUE      14
+                                    LIMA	        15
+                                    LORETO	        16
+                                    MADRE DE DIOS   17
+                                    MOQUEGUA	    18
+                                    PASCO	        19
+                                    PIURA	        20
+                                    PUNO	        21
+                                    SAN MARTIN      22
+                                    TACNA	        23
+                                    TUMBES  	    24
+                                    UCAYALI	        25
+vacunado                =       inmunización completa (2 dosis) 0 no, 1 si
+dosis_1                 =       0 no, 1 si
+fecha_vacunacion_1      =       fecha de vacunación dosis 1
+id_vacuna_1             =       no hay información
+dosis_2                 =       0 no, 1 si
+fecha_vacunacion_2      =       fecha de vacunación dosis 2
+id_vacuna_2             =       no hay información
+dosis_3                 =       0 no, 1 si
+fecha_vacunacion_3      =       fecha de vacunación dosis 3
+id_vacuna_3             =       no hay información
