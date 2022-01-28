@@ -1,4 +1,75 @@
-DP6
+====================== DP3 ====================== 
+Data Product 3 (DP3) es el resultado de todos los casos positivos por covid19 en el Perú, con
+información sobre fallecimiento y vacunación. El dataset se obtuvo uniendo los idendificadores
+de cada persona "id_persona". NOTA: Duplicados encontrados fueron eliminados ya que representan
+varios contagios de la misma persona (Se toma solamente el último contagio de la persona).
+
+En este caso para el propósito del estudio nos interesa la mortalidad y la vacunación, por ello
+no se toma en cuenta el número de veces de contagio o fechas de la misma, si no todos los datos 
+por id ("id_persona") del paciente.
+
+0   id_persona           idendificador de persona
+1   fecha_resultado      fecha de resultado (positivo para covid19)
+2   metododx             método de prueba aplicado:
+                            Prueba rápida       1
+                            PCR                 2
+                            Antígeno            3
+3   sexo                 1 hombre, 2 mujer 
+4   edad                 edad en años
+5   edad_cat             categoría de edad 
+                            0       < 18
+                            1       >=18 & <30
+                            2       >=30 & <40
+                            3       >=40 & <50
+                            4       >=50 & <60
+                            5       >=60 & <70
+                            6       >=70 & <80
+                            7       >=80  
+6   departamento         departamento en orden alfabético:
+                            AMAZONAS    = 1
+                            ANCASH      = 2
+                            APURIMAC    = 3
+                            AREQUIPA    = 4
+                            AYACUCHO    = 5
+                            CAJAMARCA   = 6
+                            CALLAO      = 7
+                            CUSCO       = 8
+                            HUANCAVELICA= 9
+                            HUANUCO     = 10
+                            ICA         = 11
+                            JUNIN       = 12
+                            LA LIBERTAD = 13
+                            LAMBAYEQUE  = 14
+                            LIMA        = 15
+                            LORETO      = 16
+                            MADRE DE DIOS= 17
+                            MOQUEGUA    = 18
+                            PASCO       = 19
+                            PIURA       = 20
+                            PUNO        = 21
+                            SAN MARTIN  = 22
+                            TACNA       = 23
+                            TUMBES      = 24
+                            UCAYALI     = 25
+7   fallecido            0 no, 1 si   
+8   time_days            tiempo en días que se reporta fallecimiento en caso de
+9   fecha_fallecimiento  fecha_fallecimiento año, mes, día
+10  year                 año de fallecimiento
+11  epi_week             semana epidemiológica de fallecimiento respecto al año
+12  vacunado             recibió 2 dosis (inmunización completa)   
+13  dosis_1              recibió dosis 1  
+14  dosis_2              recibió dosis 2  
+15  dosis_3              recibió dosis 3   
+16  id_vacuna_1          id de vacuna 1   
+17  id_vacuna_2          id de vacuna 2   
+18  id_vacuna_3          id de vacuna 3   
+19  fecha_vacuna_1       fecha de vacuna 1
+20  fecha_vacuna_2       fecha de vacuna 2
+21  fecha_vacuna_3       fecha de vacuna 3
+
+
+====================== DP6 ====================== 
+
 id_persona              =       idendificador de persona
 fecha_fallecimiento     =       fecha de fallecimiento
 year                    =       año de fallecimiento
