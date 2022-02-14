@@ -14,11 +14,22 @@ El objetivo del repositorio es integrar información, generar tablas resumen y v
 
 
 ## 1. Data Products ([Data](https://github.com/xxotto/covid19-peru/tree/main/Data))
+
 Data products, datos finales o tablas resumen obtenidos se encuentran en el directorio Data. Todos los archivos se encuentran en formato de valores separados por comas (CSV).
    
-   - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset de casos positivos, fallecidos y personas completamente vacunadas contra COVID-19 respecto a grupos etáreos y departamentos por año y semana epidemiológica.
+**NOTA:** Algunos dataset resultantes no se encuentran en el repositorio debido a su excesivo tamaño, en su lugar visitar el [Google Drive](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing) con todos los Data Products.
 
-   - [Data Product 2](Data/DP2_covid19-peru_resumen_x_departamentos.csv):  Dataset de casos positivos, fallecidos y totalmente vacunados por cada departamento del Perú. De la misma manera se agrega el número de habitantes de cada departamento, para calcular la tasa de mortalidad por 100 000 habitantes y el porcentaje de vacunación respectivo.
+   - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset de casos positivos, fallecidos y personas completamente vacunadas contra COVID-19 respecto a grupos etáreos y departamentos por cada semana epidemiológica y año.
+
+   - [Data Product 2](Data/DP2_covid19-peru_resumen_x_departamentos.csv):  Dataset resumen de casos positivos, fallecidos y número de dosis administradas por cada departamento del Perú. De la misma manera se agrega el número de habitantes de cada departamento, para calcular la tasa de mortalidad por 100 000 habitantes y el porcentaje de vacunación respectivo.
+
+   - [Data Product 3](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de TODOS los casos positivos por COVID-19 reportados en Perú, más información de fallecimiento y vacunación de los mismos.
+
+   - [Data Product 4](Data/DP4_covid19-peru_x_fecha.csv): Dataset con el número de casos positivos y fallecimientos por COVID-19 reportados diariamente. 
+
+   - [Data Product 5](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de todos los casos positivos para COVID-19 con información codificada (para un mejor manejo).
+
+   - [Data Product 6](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de TODOS los fallecidos por COVID-19 más información sobre vacunación de los mismos. Dosis 1,2 o 3 aplicadas, tipo de vacuna y fecha de vacunación de cada una.
 
 Gráficas de análisis de resultados disponibles en [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
@@ -49,7 +60,7 @@ Proximamente...
 
 ## 5. Contacto
    
-Todos los scripts, gráficos, procesos de limpieza y manejo de bases de datos epidemiológicos fueron realizados por Otto Proaño ([@xxotto](https://github.com/xxotto)) durante el transcurso de pasantías de investigación dentro del [Laboratorio de Investigación en Enfermedades Emergentes - EmergeLab](https://investigacion.cayetano.edu.pe/catalogo/saludintegral/emerge), de la Universidad Peruana Cayetano Heredia (UPCH) bajo la supervisión de David W. Chaupis-Meza. Cualquier duda, comentario o sugerencia será bienvenida. 
+Todos los scripts, gráficos, procesos de limpieza y manejo de bases de datos epidemiológicos fueron realizados por Otto Proaño ([@xxotto](https://github.com/xxotto)) durante el transcurso de pasantías de investigación (07/2021 - 12/2021) dentro del [Laboratorio de Investigación en Enfermedades Emergentes - EmergeLab](https://investigacion.cayetano.edu.pe/catalogo/saludintegral/emerge), de la Universidad Peruana Cayetano Heredia (UPCH) bajo la supervisión de David W. Chaupis-Meza. Cualquier duda, comentario o sugerencia será bienvenida. 
 
 Correo de contacto: otto.proano@hotmail.com
 

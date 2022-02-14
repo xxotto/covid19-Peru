@@ -1,31 +1,15 @@
 # Data results
 
-### [Data Product 1](https://github.com/xxotto/covid19-peru/blob/main/Data/DP1_vacunados_y_fallecidos_x_semanaEpi.csv): Dataset con el número de fallecidos y vacunados (dosis aplicadas) por COVID-19 por semana epidemiológica y departamento.
+**IMPORTANTE:** Todos los Data Products se encuentran disponibles en [Google Drive](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing). 
 
+   - [Data Product 1](Data/DP1_covid19-peru_x_semanaEpi.csv): Dataset de casos positivos, fallecidos y personas completamente vacunadas contra COVID-19 respecto a grupos etáreos y departamentos por cada semana epidemiológica y año.
 
-| No. | Variable      | Descripción                  | No. | Variable     | Descripción                       |
-|:---:|---------------|------------------------------|:---:|--------------|-----------------------------------|
-|  0  | year          | Año                          |  11 | 70_79_fal    | Fallecidos de 70 a 79 años        |
-|  1  | epi_week      | Semana epidemiológica        |  12 | 80_more_fal  | Fallecidos de 80 años en adelante |
-|  2  | total_dosis_1 | Total de 1ra dosis aplicadas |  13 | 0_17_vac     | Vacunados de 0 a 17 años          |
-|  3  | total_dosis_2 | Total de 2da dosis aplicadas | ... |      ...     |                ...                |
-|  4  | total_dosis_3 | Total de 3ra dosis aplicadas |  20 | 80_more_vac  | Vacunados de 80 años en adelante  |
-|  5  | 0_17_fal      | Fallecidos de 0 a 17 años    |  21 | AMAZONAS_fal | Número de fallecidos en Amazonas  |
-|  6  | 18_29_fal     | Fallecidos de 18 a 29 años   |  .. |      ...     |                ...                |
-|  7  | 30_39_fal     | Fallecidos de 30 a 39 años   |  44 | UCAYALI_fal  | Número de fallecidos en Ucayali   |
-|  8  | 40_49_fal     | Fallecidos de 40 a 49 años   |  45 | AMAZONAS_vac | Número de vacunados en Amazonas   |
-|  9  | 50_59_fal     | Fallecidos de 50 a 59 años   | ... |      ...     |                ...                |
-|  10 | 60_69_fal     | Fallecidos de 60 a 69 años   |  46 | UCAYALI_fal  | Número de vacunados en Ucayali    |
+   - [Data Product 2](Data/DP2_covid19-peru_resumen_x_departamentos.csv):  Dataset resumen de casos positivos, fallecidos y número de dosis administradas por cada departamento del Perú. De la misma manera se agrega el número de habitantes de cada departamento, para calcular la tasa de mortalidad por 100 000 habitantes y el porcentaje de vacunación respectivo.
 
-### [Data Product 2](https://github.com/xxotto/covid19-peru/blob/main/Data/DP2_TOTAL_vacunados_y_fallecidos_x_departamento.csv): TOTAL de personas fallecidas y vacunadas contra COVID-19 por departamento.
+   - [Data Product 3](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de TODOS los casos positivos por COVID-19 reportados en Perú, más información de fallecimiento y vacunación de los mismos.
 
-| No. | Variable        | Descripción                                |
-|-----|-----------------|--------------------------------------------|
-| 0   | departamentos   | Departamentos                              |
-| 1   | fallecidos      | Total de fallecidos                        |
-| 2   | dosis_1         | Total de 1ra dosis aplicadas               |
-| 3   | dosis_2         | Total de 2da dosis aplicadas               |
-| 4   | dosis_3         | Total de 3ra dosis aplicadas               |
-| 5   | no_habitantes   | Número de habitantes por departamento 2020 |
-| 6   | tasa_mortalidad | Tasa de mortalidad por 100 000 habitantes  |
-| 7   | vac_porcentaje  | Porcentaje de la población vacunada        |
+   - [Data Product 4](Data/DP4_covid19-peru_x_fecha.csv): Dataset con el número de casos positivos y fallecimientos por COVID-19 reportados diariamente. 
+
+   - [Data Product 5](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de todos los casos positivos para COVID-19 con información codificada (para un mejor manejo).
+
+   - [Data Product 6](https://drive.google.com/drive/folders/1uzUqcqrET1WN1nquh_335R9GU9FishEO?usp=sharing): Dataset de TODOS los fallecidos por COVID-19 más información sobre vacunación de los mismos. Dosis 1,2 o 3 aplicadas, tipo de vacuna y fecha de vacunación de cada una.
