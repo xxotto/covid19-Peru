@@ -33,9 +33,15 @@ Data products, datos finales o tablas resumen obtenidos se encuentran en el dire
 
 Gráficas de análisis de resultados disponibles en [Images](https://github.com/xxotto/covid19-peru/tree/main/Images).
 
-**Ejemplo # 1:** Total de muertes por COVID-19 en Perú desde que comenzó la campaña de vacunación (SE6 del 2021) vs porcentaje de la población completamente vacunada.
+**Ejemplo # 1:** Total de muertes por COVID-19 en Perú desde que comenzó la campaña de vacunación (SE6-2021) vs porcentaje de la población completamente vacunada.
 
 ![Esta es una imagen de ejemplo](https://raw.githubusercontent.com/xxotto/covid19-peru/main/Images/covid19-peru_fallecidos_vs_vacunados_x_semanaEpi.png)
+
+
+**Ejemplo # 2:** Total de muertes por COVID-19 en Perú desde el comienzo de la pandemia (SE10-2020) hasta la actualidad.
+
+![Esta es una imagen de ejemplo](https://raw.githubusercontent.com/xxotto/covid19-peru/main/Images/covid19-peru_fallecidos_x_semanaEpi.png)
+
 
 ## 2. Fuentes de datos ([RawData](https://github.com/xxotto/covid19-peru/tree/main/RawData))
 En el directorio de  se encuentran todas las bases de datos que fueron usados para generar tablas resumen y gráficas. Las fuentes de datos se encuentran "crudas", tal y como se obtuvieron a través de la [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) del Gobierno del Perú. 
